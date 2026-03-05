@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { StudyGuideLogo } from "@/components/study-guide/StudyGuideLogo";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.lifeukprep.co.uk";
 
 export function StudyGuideFooter() {
   const year = new Date().getFullYear();
@@ -22,36 +23,36 @@ export function StudyGuideFooter() {
             </div>
             <ul className="mt-3 space-y-2 text-base">
               <li>
-                <Link
+                <a
                   className="text-slate-600 hover:underline dark:text-slate-200"
-                  href="/study-guide"
+                  href={`${SITE_URL}/study-guide`}
                 >
                   Study guide
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   className="text-slate-600 hover:underline dark:text-slate-200"
-                  href="/practice"
+                  href={`${SITE_URL}/practice`}
                 >
                   Practice
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   className="text-slate-600 hover:underline dark:text-slate-200"
-                  href="/mocks"
+                  href={`${SITE_URL}/mocks`}
                 >
                   Mock test
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   className="text-slate-600 hover:underline dark:text-slate-200"
-                  href="/mistakes"
+                  href={`${SITE_URL}/mistakes`}
                 >
                   Mistakes
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -62,28 +63,28 @@ export function StudyGuideFooter() {
             </div>
             <ul className="mt-3 space-y-2 text-base">
               <li>
-                <Link
+                <a
                   className="text-slate-600 hover:underline dark:text-slate-200"
-                  href="/#faq"
+                  href={`${SITE_URL}/#faq`}
                 >
                   FAQ
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   className="text-slate-600 hover:underline dark:text-slate-200"
-                  href="/contact"
+                  href={`${SITE_URL}/contact`}
                 >
                   Contact
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   className="text-slate-600 hover:underline dark:text-slate-200"
-                  href="/about"
+                  href={`${SITE_URL}/about`}
                 >
                   About
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -94,20 +95,20 @@ export function StudyGuideFooter() {
             </div>
             <ul className="mt-3 space-y-2 text-base">
               <li>
-                <Link
+                <a
                   className="text-slate-600 hover:underline dark:text-slate-200"
-                  href="/terms"
+                  href={`${SITE_URL}/terms`}
                 >
                   Terms
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   className="text-slate-600 hover:underline dark:text-slate-200"
-                  href="/privacy"
+                  href={`${SITE_URL}/privacy`}
                 >
                   Privacy
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

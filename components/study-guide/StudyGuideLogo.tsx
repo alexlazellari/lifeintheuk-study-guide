@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.lifeukprep.co.uk";
 
 type LogoSize = "sm" | "md";
 
@@ -80,9 +81,9 @@ export function StudyGuideLogo({
   );
 
   return asLink ? (
-    <Link href="/" aria-label="LifeUKPrep" className={wrapperClassName}>
+    <a href={SITE_URL} aria-label="LifeUKPrep" className={wrapperClassName}>
       {content}
-    </Link>
+    </a>
   ) : (
     <span aria-label="LifeUKPrep" className={wrapperClassName}>
       {content}
