@@ -74,7 +74,7 @@ export default async function StudyGuideLayout({
         copyPageButton={false}
         editLink={null}
         feedback={{ content: null }}
-        sidebar={{ toggleButton: true }}
+        sidebar={{ toggleButton: false }}
         pageMap={pageMap}
       >
         {children}
