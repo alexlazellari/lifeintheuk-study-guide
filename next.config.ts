@@ -8,6 +8,7 @@ const withNextra = nextra({
 
 const nextConfig: NextConfig = {
   basePath: "/study-guide",
+  images: { unoptimized: true },
   turbopack: {
     root: path.resolve(__dirname),
     resolveAlias: {
