@@ -2,7 +2,7 @@ export default {
   index: {
     title: "Overview",
     type: "page",
-    href: "/study-guide/ch3/early-britain",
+    href: "/ch3/early-britain",
   },
   "early-britain": "Early Britain",
   "the-middle-ages": "The Middle Ages",

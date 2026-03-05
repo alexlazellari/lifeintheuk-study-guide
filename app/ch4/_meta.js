@@ -2,7 +2,7 @@ export default {
   index: {
     title: "Overview",
     type: "page",
-    href: "/study-guide/ch4/the-uk-today",
+    href: "/ch4/the-uk-today",
   },
   "the-uk-today": "The UK today",
   religion: "Religion",

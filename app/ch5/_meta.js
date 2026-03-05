@@ -2,7 +2,7 @@ export default {
   index: {
     title: "Overview",
     type: "page",
-    href: "/study-guide/ch5/the-development-of-british-democracy",
+    href: "/ch5/the-development-of-british-democracy",
   },
   "the-development-of-british-democracy":
     "The development of British democracy",
