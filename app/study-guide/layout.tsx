@@ -43,10 +43,10 @@ const navbar = (
       <StudyGuideLogo
         size="sm"
         textClassName="flex flex-col leading-none"
-        asLink={false}
+        asLink={true}
       />
     }
-    logoLink={process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.lifeukprep.co.uk"}
+    logoLink={false}
   >
     <div className="flex items-center gap-4">
       <StudyGuideCtaButton />
