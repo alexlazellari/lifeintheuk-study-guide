@@ -3,15 +3,12 @@ import nextra from "nextra";
 import path from "path";
 
 const withNextra = nextra({
-  contentDirBasePath: "/study-guide",
+  contentDirBasePath: "/",
 });
 
 const nextConfig: NextConfig = {
   output: "export",
-  assetPrefix:
-    process.env.NODE_ENV === "production"
-      ? "https://lifeintheuk-study-guide.vercel.app"
-      : undefined,
+  basePath: "/study-guide",
   images: { unoptimized: true },
   turbopack: {
     root: path.resolve(__dirname),
