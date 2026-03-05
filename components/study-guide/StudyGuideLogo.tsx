@@ -49,7 +49,7 @@ export function StudyGuideLogo({
   const content = (
     <>
       <Image
-        src="/images/uk-flag.png"
+        src="/study-guide/images/uk-flag.png"
         alt="British flag"
         width={styles.imgSize}
         height={styles.imgSize}
