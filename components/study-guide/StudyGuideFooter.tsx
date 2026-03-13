@@ -1,6 +1,6 @@
 import { StudyGuideLogo } from "@/components/study-guide/StudyGuideLogo";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.lifeukprep.co.uk";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.britready.uk";
 
 export function StudyGuideFooter() {
   const year = new Date().getFullYear();
@@ -120,9 +120,9 @@ export function StudyGuideFooter() {
         <div className="flex flex-wrap gap-x-4 gap-y-2">
           <a
             className="text-slate-600 hover:underline dark:text-slate-200"
-            href="mailto:hello@lifeukprep.co.uk"
+            href="mailto:hello@britready.uk"
           >
-            hello@lifeukprep.co.uk
+            hello@britready.uk
           </a>
         </div>
       </div>

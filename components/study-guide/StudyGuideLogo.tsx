@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.lifeukprep.co.uk";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.britready.uk";
 
 type LogoSize = "sm" | "md";
 

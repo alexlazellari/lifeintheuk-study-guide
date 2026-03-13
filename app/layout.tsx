@@ -13,7 +13,7 @@ import { StudyGuideLogo } from "@/components/study-guide/StudyGuideLogo";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.lifeukprep.co.uk"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.britready.uk"
 ).replace(/\/+$/, "");
 
 export const metadata: Metadata = {
