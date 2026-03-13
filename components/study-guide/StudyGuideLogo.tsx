@@ -64,12 +64,11 @@ export function StudyGuideLogo({
               "text-slate-900 dark:text-slate-100",
             )}
           >
-            LifeUK{" "}
-            <span className="text-slate-500 dark:text-slate-400">Prep</span>
+            BritReady
           </span>
         </span>
       ) : (
-        <span className="sr-only">LifeUK Prep</span>
+        <span className="sr-only">BritReady</span>
       )}
     </>
   );
@@ -81,11 +80,11 @@ export function StudyGuideLogo({
   );
 
   return asLink ? (
-    <a href={SITE_URL} aria-label="LifeUKPrep" className={wrapperClassName}>
+    <a href={SITE_URL} aria-label="BritReady" className={wrapperClassName}>
       {content}
     </a>
   ) : (
-    <span aria-label="LifeUKPrep" className={wrapperClassName}>
+    <span aria-label="BritReady" className={wrapperClassName}>
       {content}
     </span>
   );

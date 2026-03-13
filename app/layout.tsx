@@ -25,13 +25,13 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "Study Guide | Life in the UK Prep",
+    title: "Study Guide | BritReady",
     description:
       "Chapter-by-chapter Life in the UK study guide to support your test revision.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Study Guide | Life in the UK Prep",
+    title: "Study Guide | BritReady",
     description:
       "Study the Life in the UK handbook content with a clear online guide.",
   },
