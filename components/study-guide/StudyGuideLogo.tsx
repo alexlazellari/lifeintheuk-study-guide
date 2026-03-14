@@ -63,7 +63,7 @@ export function StudyGuideLogo({
               "font-(family-name:--font-space-grotesk) tracking-tight",
             )}
           >
-            <span className="font-bold text-slate-900 dark:text-slate-100">Brit</span><span className="font-medium text-slate-500 dark:text-slate-400">Ready</span>
+            <span className="font-bold text-slate-900 dark:text-slate-100">Brit</span><span className="font-medium text-slate-600 dark:text-slate-400">Ready</span>
           </span>
         </span>
       ) : (
