@@ -60,11 +60,10 @@ export function StudyGuideLogo({
           <span
             className={cn(
               styles.label,
-              "font-semibold tracking-tight",
-              "text-slate-900 dark:text-slate-100",
+              "font-(family-name:--font-space-grotesk) tracking-tight",
             )}
           >
-            BritReady
+            <span className="font-bold text-slate-900 dark:text-slate-100">Brit</span><span className="font-medium text-slate-500 dark:text-slate-400">Ready</span>
           </span>
         </span>
       ) : (
