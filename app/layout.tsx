@@ -42,7 +42,7 @@ const navbar = (
   <Navbar
     logo={
       <StudyGuideLogo
-        size="sm"
+        size="md"
         textClassName="flex flex-col leading-none"
         asLink={true}
       />

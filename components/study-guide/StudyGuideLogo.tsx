@@ -25,13 +25,13 @@ const SIZE_STYLES: Record<
   sm: {
     imgClass: "h-5 w-5",
     imgSize: 20,
-    gap: "gap-1.5",
-    label: "text-xs",
+    gap: "gap-2",
+    label: "text-[13px]",
   },
   md: {
     imgClass: "h-6 w-6",
     imgSize: 24,
-    gap: "gap-1.5",
+    gap: "gap-2",
     label: "text-sm",
   },
 };
@@ -60,10 +60,11 @@ export function StudyGuideLogo({
           <span
             className={cn(
               styles.label,
-              "font-(family-name:--font-space-grotesk) tracking-tight",
+              "inline-flex items-baseline gap-0.5 whitespace-nowrap font-(family-name:--font-space-grotesk) tracking-tight",
             )}
           >
-            <span className="font-bold text-slate-900 dark:text-slate-100">Future</span><span className="font-medium text-slate-600 dark:text-slate-400">Citizen</span>
+            <span className="font-bold text-slate-950 dark:text-slate-50">Future</span>
+            <span className="font-medium text-slate-700 dark:text-slate-300">Citizen</span>
           </span>
         </span>
       ) : (
@@ -73,7 +74,7 @@ export function StudyGuideLogo({
   );
 
   const wrapperClassName = cn(
-    "group inline-flex items-center",
+    "group inline-flex items-center whitespace-nowrap",
     styles.gap,
     className,
   );
