@@ -9,6 +9,14 @@ const withNextra = nextra({
 const nextConfig: NextConfig = {
   basePath: "/study-guide",
   images: { unoptimized: true },
+  async headers() {
+    return [
+      {
+        source: "/((?!_next/static|_next/image).*)",
+        headers: [{ key: "Cache-Control", value: "no-store" }],
+      },
+    ];
+  },
   turbopack: {
     root: path.resolve(__dirname),
     resolveAlias: {
