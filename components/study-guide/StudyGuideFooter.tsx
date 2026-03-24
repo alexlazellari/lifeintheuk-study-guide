@@ -120,9 +120,9 @@ export function StudyGuideFooter() {
         <div className="flex flex-wrap gap-x-4 gap-y-2">
           <a
             className="text-slate-600 hover:underline dark:text-slate-200"
-            href="mailto:hello@lifeukprep.co.uk"
+            href="mailto:hello@futurecitizen.co.uk"
           >
-            hello@lifeukprep.co.uk
+            hello@futurecitizen.co.uk
           </a>
         </div>
       </div>
