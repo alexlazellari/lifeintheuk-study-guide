@@ -30,11 +30,11 @@ export function StudyGuideLogo({
       )}
       aria-label="FutureCitizen"
     >
-      <span className="font-semibold" style={{ color: "#4288c9" }}>future</span>
+      <span className="font-semibold text-[#4288c9]">future</span>
       <span className="inline-flex items-baseline">
-        <span className="font-light" style={{ color: "#94a3b8" }}>[</span>
-        <span className="font-medium mx-0.5" style={{ color: "#1e293b" }}>citizen</span>
-        <span className="font-light" style={{ color: "#94a3b8" }}>]</span>
+        <span className="font-light text-slate-400 dark:text-slate-500">[</span>
+        <span className="font-medium mx-0.5 text-slate-800 dark:text-slate-100">citizen</span>
+        <span className="font-light text-slate-400 dark:text-slate-500">]</span>
       </span>
     </span>
   );
