@@ -42,11 +42,7 @@ export const metadata: Metadata = {
 const navbar = (
   <Navbar
     logo={
-      <StudyGuideLogo
-        size="md"
-        textClassName="flex flex-col leading-none"
-        asLink={true}
-      />
+      <StudyGuideLogo size="md" asLink={true} />
     }
     logoLink={false}
   >

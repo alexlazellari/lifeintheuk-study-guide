@@ -9,7 +9,7 @@ export function StudyGuideFooter() {
     <div className="w-full">
       <div className="grid gap-10 md:grid-cols-[minmax(0,1.2fr)_minmax(0,2fr)]">
         <div>
-          <StudyGuideLogo size="sm" textClassName="flex flex-col leading-none" />
+          <StudyGuideLogo size="sm" />
           <p className="mt-3 max-w-sm text-base text-slate-600 dark:text-slate-200">
             Clear study notes, fast practice, and mock tests designed for the
             Life in the UK exam.

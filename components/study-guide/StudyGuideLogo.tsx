@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.futurecitizen.co.uk";
@@ -7,80 +6,43 @@ type LogoSize = "sm" | "md";
 
 type StudyGuideLogoProps = {
   size?: LogoSize;
-  showText?: boolean;
-  textClassName?: string;
   className?: string;
   asLink?: boolean;
 };
 
-const SIZE_STYLES: Record<
-  LogoSize,
-  {
-    imgClass: string;
-    imgSize: number;
-    gap: string;
-    label: string;
-  }
-> = {
-  sm: {
-    imgClass: "h-5 w-5",
-    imgSize: 20,
-    gap: "gap-2",
-    label: "text-[13px]",
-  },
-  md: {
-    imgClass: "h-6 w-6",
-    imgSize: 24,
-    gap: "gap-2",
-    label: "text-sm",
-  },
+const SIZE_STYLES: Record<LogoSize, { label: string }> = {
+  sm: { label: "text-sm" },
+  md: { label: "text-base" },
 };
 
 export function StudyGuideLogo({
   size = "md",
-  showText = true,
-  textClassName,
   className,
   asLink = true,
 }: StudyGuideLogoProps) {
-  const styles = SIZE_STYLES[size];
-  const textWrap = textClassName ?? "flex flex-col leading-none";
+  const { label } = SIZE_STYLES[size];
 
   const content = (
-    <>
-      <Image
-        src="/study-guide/images/uk-flag.png"
-        alt="British flag"
-        width={styles.imgSize}
-        height={styles.imgSize}
-        className={cn(styles.imgClass, "object-contain")}
-      />
-      {showText ? (
-        <span className={textWrap}>
-          <span
-            className={cn(
-              styles.label,
-              "inline-flex items-baseline gap-0.5 whitespace-nowrap font-(family-name:--font-space-grotesk) tracking-tight",
-            )}
-          >
-            <span className="font-bold text-slate-950 dark:text-slate-50">Future</span>
-            <span className="font-medium text-slate-700 dark:text-slate-300">Citizen</span>
-          </span>
-        </span>
-      ) : (
-        <span className="sr-only">FutureCitizen</span>
+    <span
+      className={cn(
+        label,
+        "inline-flex items-baseline gap-0.5 whitespace-nowrap font-(family-name:--font-space-grotesk) tracking-tight",
       )}
-    </>
+      aria-label="FutureCitizen"
+    >
+      <span className="font-semibold" style={{ color: "#4288c9" }}>future</span>
+      <span className="inline-flex items-baseline">
+        <span className="font-light" style={{ color: "#94a3b8" }}>[</span>
+        <span className="font-medium mx-0.5" style={{ color: "#1e293b" }}>citizen</span>
+        <span className="font-light" style={{ color: "#94a3b8" }}>]</span>
+      </span>
+    </span>
   );
 
-  const wrapperClassName = cn(
-    "group inline-flex items-center whitespace-nowrap",
-    styles.gap,
-    className,
-  );
+  const wrapperClassName = cn("inline-flex items-center", className);
 
   return asLink ? (
-    <a href={SITE_URL} aria-label="FutureCitizen" className={wrapperClassName}>
+    <a href={SITE_URL} aria-label="FutureCitizen home" className={wrapperClassName}>
       {content}
     </a>
   ) : (
